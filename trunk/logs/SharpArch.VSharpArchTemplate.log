@@ -1,0 +1,46 @@
+16:57:19	MoveCommonAssemblyInfoToRoot: Moving CommonAssemblyInfo.cs from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\SolutionItemsContainer\CommonAssemblyInfo.cs to root at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\CommonAssemblyInfo.cs
+16:57:19	MoveSolutionItemsToLib: Moving solution items from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\SolutionItemsContainer\Solution Items to lib at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\lib
+16:57:20	MoveSolutionItemsToToolsLib: Moving tools solution items from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\ToolsSolutionItemsContainer\Solution Items to tools lib at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\tools\lib
+16:57:22	MoveProjectTo: Removing Infoboard.Core from solution
+16:57:23	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Core\Infoboard.Core.csproj
+16:57:23	MoveProjectTo: Moving Infoboard.Core from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Core to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Core
+16:57:23	MoveProjectTo: Adding Infoboard.Core to solution
+16:57:24	CaptureProjectGuidOf: Does C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Core\Infoboard.Core.csproj exist? True
+16:57:24	CaptureProjectGuidOf: About to open C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Core\Infoboard.Core.csproj
+16:57:24	CaptureProjectGuidOf: Captured the GUID {F47BB8A3-AFE2-47BD-9D74-C16A6C3C1B80} for Infoboard.Core
+16:57:25	MoveProjectTo: Removing Infoboard.ApplicationServices from solution
+16:57:26	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.ApplicationServices\Infoboard.ApplicationServices.csproj
+16:57:26	MoveProjectTo: Moving Infoboard.ApplicationServices from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.ApplicationServices to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.ApplicationServices
+16:57:26	MoveProjectTo: Adding Infoboard.ApplicationServices to solution
+16:57:27	CaptureProjectGuidOf: Does C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.ApplicationServices\Infoboard.ApplicationServices.csproj exist? True
+16:57:27	CaptureProjectGuidOf: About to open C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.ApplicationServices\Infoboard.ApplicationServices.csproj
+16:57:27	CaptureProjectGuidOf: Captured the GUID {045AFE4C-21FA-4A24-869B-A65979D5B31B} for Infoboard.ApplicationServices
+16:57:34	MoveProjectTo: Removing Infoboard.Data from solution
+16:57:34	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Data\Infoboard.Data.csproj
+16:57:34	MoveProjectTo: Moving Infoboard.Data from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Data to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Data
+16:57:34	MoveProjectTo: Adding Infoboard.Data to solution
+16:57:35	CaptureProjectGuidOf: Does C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Data\Infoboard.Data.csproj exist? True
+16:57:35	CaptureProjectGuidOf: About to open C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Data\Infoboard.Data.csproj
+16:57:35	CaptureProjectGuidOf: Captured the GUID {7EDB82AE-0F37-485E-ABC1-54418085E6A5} for Infoboard.Data
+16:57:42	MoveProjectTo: Removing Infoboard.Web.Controllers from solution
+16:57:42	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Web.Controllers\Infoboard.Web.Controllers.csproj
+16:57:42	MoveProjectTo: Moving Infoboard.Web.Controllers from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Web.Controllers to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Web.Controllers
+16:57:42	MoveProjectTo: Adding Infoboard.Web.Controllers to solution
+16:57:43	CaptureProjectGuidOf: Does C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Web.Controllers\Infoboard.Web.Controllers.csproj exist? True
+16:57:43	CaptureProjectGuidOf: About to open C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Web.Controllers\Infoboard.Web.Controllers.csproj
+16:57:43	CaptureProjectGuidOf: Captured the GUID {B41A3C81-5463-4075-9012-9AAA53026918} for Infoboard.Web.Controllers
+16:57:58	MoveProjectTo: Removing Infoboard.Tests from solution
+16:57:59	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Tests\Infoboard.Tests.csproj
+16:57:59	MoveProjectTo: Moving Infoboard.Tests from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Tests to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\tests\Infoboard.Tests
+16:58:00	MoveProjectTo: Adding Infoboard.Tests to solution
+16:58:22	MoveProjectTo: Removing Infoboard.Web from solution
+16:58:23	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Web\Infoboard.Web.csproj
+16:58:23	MoveProjectTo: Moving Infoboard.Web from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\Infoboard.Web to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\app\Infoboard.Web
+16:58:23	MoveProjectTo: Adding Infoboard.Web to solution
+16:58:27	MoveProjectTo: Removing CrudScaffolding from solution
+16:58:28	PerformManualProjectReplacementsTo: Going to PerformManualProjectReplacementsTo on C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\CrudScaffolding\CrudScaffolding.csproj
+16:58:28	MoveProjectTo: Moving CrudScaffolding from C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\CrudScaffolding to target location at C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\tools\CrudScaffolding
+16:58:28	MoveProjectTo: Adding CrudScaffolding to solution folder C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard\tools\CrudScaffolding
+16:58:28	ExcludeProjectFromBuildProcess: Setting build to false for project Infoboard\tools\CrudScaffolding\CrudScaffolding.csproj within the Debug configuration
+16:58:28	ExcludeProjectFromBuildProcess: Setting build to false for project Infoboard\tools\CrudScaffolding\CrudScaffolding.csproj within the Release configuration
+16:58:28	DeleteSuoFile: Deleting C:\Users\Morten Kristensen\Documents\Projects\Websites\Infoboard\Infoboard.suo
