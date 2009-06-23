@@ -5,7 +5,7 @@ using SharpArch.Core.DomainModel;
 
 namespace Infoboard.Core
 {
-    public sealed class Column : Entity
+    public class Column : Entity
     {
         public Column() {
         }
