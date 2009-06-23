@@ -1,13 +1,7 @@
 ﻿#region < References >
-using System;
-using System.Xml;
-using FluentNHibernate;
 using FluentNHibernate.AutoMap;
 using FluentNHibernate.AutoMap.Alterations;
-using FluentNHibernate.Mapping;
 using Infoboard.Core;
-using SharpArch.Data.NHibernate.FluentNHibernate;
-
 #endregion
 
 namespace Infoboard.Data.NHibernateMaps
