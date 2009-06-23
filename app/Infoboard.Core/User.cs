@@ -10,6 +10,7 @@ namespace Infoboard.Core
     {
         public User() {
             InitializeMembers();
+            // DANIEL ER GRIM LLOOLOOLOLOLLO
         }
 
         public User(string username) : this() {
