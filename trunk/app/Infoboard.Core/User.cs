@@ -23,11 +23,11 @@ namespace Infoboard.Core
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
-        public string Username { get; set; }
+        public virtual string Username { get; set; }
 
-        public IList<Chart> Rotation { get; protected set; }
-        public IList<Chart> Charts { get; protected set; }
-        public IList<Board> Boards { get; protected set; }
+        public virtual IList<Chart> Rotation { get; protected set; }
+        public virtual IList<Chart> Charts { get; protected set; }
+        public virtual IList<Board> Boards { get; protected set; }
 
 
     }

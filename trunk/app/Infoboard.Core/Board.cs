@@ -23,14 +23,14 @@ namespace Infoboard.Core
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
-        public string Title { get; set; }
+        public virtual string Title { get; set; }
 
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
 
         [DomainSignature, NotNull(Message = "A user must be provided")]
-        public User Creator { get; protected set; }
+        public virtual User Creator { get; protected set; }
 
-        public IList<Chart> Charts { get; protected set; }
+        public virtual IList<Chart> Charts { get; protected set; }
         
     }
 }
