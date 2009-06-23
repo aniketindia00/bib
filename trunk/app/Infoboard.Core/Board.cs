@@ -1,18 +1,16 @@
 ﻿#region < References >
 using System.Collections.Generic;
-using NHibernate.Validator;
 using NHibernate.Validator.Constraints;
-using SharpArch.Core;
 using SharpArch.Core.DomainModel;
-using SharpArch.Core.PersistenceSupport;
-
 #endregion
 
 namespace Infoboard.Core
 {
-    public class Board : Entity
+    public sealed class Board : Entity
     {
-        public Board() { InitializeMembers(); }
+        public Board() {
+            InitializeMembers();
+        }
 
         public Board(string title, User user) : this()
         {
@@ -20,15 +18,19 @@ namespace Infoboard.Core
             Creator = user;
         }
 
-        [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
-        public virtual string Title { get; set; }
+        private void InitializeMembers() {
+            Charts = new List<Chart>();
+        }
 
-        public virtual string Description { get; set; }
+        [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
+        public string Title { get; set; }
+
+        public string Description { get; set; }
 
         [DomainSignature, NotNull(Message = "A user must be provided")]
-        public virtual User Creator { get; protected set; }
+        public User Creator { get; protected set; }
 
-        public virtual IList<Chart> Charts { get; protected set; }
-        private void InitializeMembers() { Charts = new List<Chart>(); }
+        public IList<Chart> Charts { get; protected set; }
+        
     }
 }

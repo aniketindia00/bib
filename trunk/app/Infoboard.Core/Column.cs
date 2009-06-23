@@ -1,17 +1,14 @@
 ﻿#region < References >
-using NHibernate.Validator;
 using NHibernate.Validator.Constraints;
-using SharpArch.Core;
 using SharpArch.Core.DomainModel;
-using SharpArch.Core.PersistenceSupport;
-
 #endregion
 
 namespace Infoboard.Core
 {
-    public class Column : Entity
+    public sealed class Column : Entity
     {
-        public Column() { }
+        public Column() {
+        }
 
         public Column(string columnName, Query query)
         {
@@ -20,11 +17,11 @@ namespace Infoboard.Core
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A name must be provided")]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
-        public virtual string Alias { get; set; }
+        public string Alias { get; set; }
 
         [DomainSignature, NotNull(Message = "A query must be provided")]
-        public virtual Query Query { get; protected set; }
+        public Query Query { get; protected set; }
     }
 }

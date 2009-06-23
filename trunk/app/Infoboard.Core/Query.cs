@@ -1,18 +1,16 @@
 ﻿#region < References >
 using System.Collections.Generic;
-using NHibernate.Validator;
 using NHibernate.Validator.Constraints;
-using SharpArch.Core;
 using SharpArch.Core.DomainModel;
-using SharpArch.Core.PersistenceSupport;
-
 #endregion
 
 namespace Infoboard.Core
 {
-    public class Query : Entity
+    public sealed class Query : Entity
     {
-        public Query() { initializeMembers(); }
+        public Query() {
+            InitializeMembers();
+        }
 
         public Query(string title, string sqlCommand)
         {
@@ -20,21 +18,20 @@ namespace Infoboard.Core
             Command = sqlCommand;
         }
 
-        [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
-        public virtual string Title { get; set; }
-
-        public virtual string Description { get; set; }
-
-        [DomainSignature, NotNullNotEmpty(Message = "A command must be provided")]
-        public virtual string Command { get; set; }
-
-        public virtual IList<Chart> Charts { get; protected set; }
-        public virtual IList<Column> Columns { get; protected set; }
-
-        private void initializeMembers()
-        {
+        private void InitializeMembers() {
             Charts = new List<Chart>();
             Columns = new List<Column>();
         }
+
+        [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
+        public string Title { get; set; }
+
+        public string Description { get; set; }
+
+        [DomainSignature, NotNullNotEmpty(Message = "A command must be provided")]
+        public string Command { get; set; }
+
+        public IList<Chart> Charts { get; protected set; }
+        public IList<Column> Columns { get; protected set; }
     }
 }
