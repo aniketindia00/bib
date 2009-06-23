@@ -151,7 +151,7 @@ ol
 #top
 {
     padding-top: 0;
-    background: #3d3d3b url(../images/topbg.gif) repeat-x;
+    background: #3d3d3b url(/Content/images/topbg.gif) repeat-x;
     height: 85px;
     margin-bottom: 25px;
 }
@@ -202,13 +202,13 @@ ol
 #menu a:hover, #menu .current
 {
     color: #fff;
-    background: #a9bc52 url(../images/tabl.gif) no-repeat left top;
+    background: #a9bc52 url(/Content/images/tabl.gif) no-repeat left top;
     padding-left: 10px;
     height: 23px;
 }
 #menu a:hover span, #menu .current span
 {
-    background: url(../images/tabr.gif) no-repeat right top;
+    background: url(/Content/images/tabr.gif) no-repeat right top;
     padding-right: 10px;
     height: 23px;
     cursor: pointer;
@@ -247,7 +247,7 @@ ol
 }
 .right_side ul
 {
-    padding: 3px 0 12px 5px;
+    padding: 3px - 12px 5px;
 }
 .right_side li
 {
@@ -350,7 +350,7 @@ ol
     padding: 7px 35px 0 0;
     margin: 10px 0 25px 0;
     text-align: right;
-    background: url(../images/commentb.gif) no-repeat top right;
+    background: url(/Content/images/commentb.gif) no-repeat top right;
     height: 32px;
 }
 .date a

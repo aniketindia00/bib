@@ -167,8 +167,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\commentb.gif" />
+    <Content Include="Content\Images\commentb.jpg" />
+    <Content Include="Content\Images\contact.gif" />
+    <Content Include="Content\Images\home.gif" />
+    <Content Include="Content\Images\rmenuhead.gif" />
+    <Content Include="Content\Images\rss.jpg" />
     <Content Include="Content\Images\sharp_arch.jpg" />
     <Content Include="Content\Images\sharp_arch_small.gif" />
+    <Content Include="Content\Images\sitemap.gif" />
+    <Content Include="Content\Images\tabl.gif" />
+    <Content Include="Content\Images\tabr.gif" />
+    <Content Include="Content\Images\topbg.gif" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="NHibernate.config">
