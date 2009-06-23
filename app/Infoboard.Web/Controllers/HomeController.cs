@@ -9,5 +9,10 @@ namespace Infoboard.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult MyBoard()
+        {
+            return View();
+        }
     }
 }
