@@ -6,7 +6,7 @@ using SharpArch.Core.DomainModel;
 
 namespace Infoboard.Core
 {
-    public sealed class User : Entity
+    public class User : Entity
     {
         public User() {
             InitializeMembers();
