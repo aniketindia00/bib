@@ -12,7 +12,7 @@ namespace Infoboard.Core
 {
     public class Board : Entity
     {
-        public Board() { initializeMembers(); }
+        public Board() { InitializeMembers(); }
 
         public Board(string title, User user) : this()
         {
@@ -29,6 +29,6 @@ namespace Infoboard.Core
         public virtual User Creator { get; protected set; }
 
         public virtual IList<Chart> Charts { get; protected set; }
-        private void initializeMembers() { Charts = new List<Chart>(); }
+        private void InitializeMembers() { Charts = new List<Chart>(); }
     }
 }
