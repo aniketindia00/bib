@@ -68,13 +68,13 @@ namespace Infoboard.Web
             base.Init();
 
             // Only allow the NHibernate session to be initialized once
-            if (_wasNHibernateInitialized) {
+            if (WasNHibernateInitialized) {
                 return;
             }
 
             lock (LockObject)
             {
-                if (_wasNHibernateInitialized) {
+                if (WasNHibernateInitialized) {
                     return;
                 }
 
@@ -83,11 +83,11 @@ namespace Infoboard.Web
                                        new AutoPersistenceModelGenerator().Generate(),
                                        Server.MapPath("~/NHibernate.config"));
 
-                _wasNHibernateInitialized = true;
+                WasNHibernateInitialized = true;
             }
         }
 
-        private static bool _wasNHibernateInitialized;
+        private static bool WasNHibernateInitialized;
 
         /// <summary>
         /// Private, static object used only for synchronization
