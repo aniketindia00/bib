@@ -20,7 +20,7 @@ namespace Infoboard.ApplicationServices
         }
 
         public List<Chart> GetChartsByBoardId(int boardId) {
-            return null;
+            return new List<Chart>();
         }
     }
 }
