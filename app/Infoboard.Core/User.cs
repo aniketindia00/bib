@@ -1,31 +1,34 @@
 ﻿#region < References >
 using System.Collections.Generic;
-using NHibernate.Validator;
 using NHibernate.Validator.Constraints;
-using SharpArch.Core;
 using SharpArch.Core.DomainModel;
-using SharpArch.Core.PersistenceSupport;
-
 #endregion
 
 namespace Infoboard.Core
 {
-    public class User : Entity
+    public sealed class User : Entity
     {
-        public User() { initializeMembers(); }
-        public User(string username) : this() { Username = username; }
+        public User() {
+            InitializeMembers();
+        }
 
-        [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
-        public virtual string Username { get; set; }
+        public User(string username) : this() {
+            Username = username;
+        }
 
-        public virtual IList<Chart> Rotation { get; protected set; }
-        public virtual IList<Chart> Charts { get; protected set; }
-        public virtual IList<Board> Boards { get; protected set; }
-
-        private void initializeMembers()
-        {
+        private void InitializeMembers() {
             Charts = new List<Chart>();
             Boards = new List<Board>();
+            Rotation = new List<Chart>();
         }
+
+        [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
+        public string Username { get; set; }
+
+        public IList<Chart> Rotation { get; protected set; }
+        public IList<Chart> Charts { get; protected set; }
+        public IList<Board> Boards { get; protected set; }
+
+
     }
 }
