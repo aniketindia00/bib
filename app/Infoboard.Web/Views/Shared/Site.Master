@@ -30,9 +30,9 @@
         <div class="content">
             <div id="menu">
                 <ul>
-                    <li><a href="#" class="current"><span>Vis Opslagstavle</span></a></li>
-                    <li><a href="#"><span>Min Opslagstavle</span></a></li>
-                    <li><a href="#"><span>Opret Board</span></a></li>
+                    <li><a href="/" class="current"><span>Vis Opslagstavle</span></a></li>
+                    <li><a href="/Home/MyBoard"><span>Min Opslagstavle</span></a></li>
+                   
                 </ul>
             </div>
             <h1><a href="#" title="">Infoboard</a></h1>
@@ -42,51 +42,25 @@
     
     <div class="content">
         <div id="main">
-        
+      
             <div class="right_side">
                 <div class="pad">
-                    <h3>Menu Title:</h3>
-                    <ul>
-                        <li>Bullet</li>
-                    </ul>
-                    <a href="#" title="RSS Feed"><img src="<%= Html.ImagePath("rss.jpg") %>" alt="RSS Feed" /></a>
+                    <asp:ContentPlaceHolder ID="_rightsideContentPlaceHolder" runat="server" />
                 </div>
             </div>
-            
+           
             <div id="left_side">                
                 <div class="mpart">
                     <asp:ContentPlaceHolder ID="_mainContentPlaceHolder" runat="server" />
-                    
-                    
-                    <h2>Title</h2>
-                    
-                    <h3>Sub-Title</h3>
-                    
-                    <p>Content</p>
-                        
-                    <ol class="code">
-                        <li class="t0">private void ClapYourHands() {</li>
-                        <li class="t1"><code>if (youre_happy && you_know_it) {</code></li>
-                        <li class="t2"><code>ClapYourHands();</code></li>
-                        <li class="t1"><code>}</code></li>
-                        <li class="t0">}</li>
-                    </ol>
-                    
-                    <blockquote>
-                        <p>Blockquote</p>
-                    </blockquote>
-                    
-                    <div class="date">
-                        <a href="#" title="#">Bottom</a>
-                    </div>
                 </div>
             </div>
+           
+            
         </div>
         
         <div id="footer">
             <div class="right">&copy; Copyright 2009, Bang & Olufsen A/S</div>
             <a href="#" title="RSS Feed">Made by</a> - <a href="http://toftit.com" title="Validate">Daniel Toft</a> 
-            
         </div>
        
     </div>
