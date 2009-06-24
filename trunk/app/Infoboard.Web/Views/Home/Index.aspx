@@ -6,21 +6,38 @@
     <div id="BoardView">
     
         <div class="Table">
-            <div style=" height: 400px;" class="InfoBox"></div>
-            <div style=" height: 100px;" class="InfoBox"></div>
-            <div style=" height: 150px;" class="InfoBox"></div>
+            <div style=" height: 400px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
+            <div style=" height: 100px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
+            <div style=" height: 150px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
         </div>
-        <div class="Table">
+        <div class="Table" id="TableMiddel">
         
-            <div style=" height: 250px;" class="InfoBox"></div>
-            <div style=" height: 350px;" class="InfoBox"></div>
-            <div style=" height: 100px;" class="InfoBox"></div>
+            <div style=" height: 250px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+                
+            </div>
+            <div style=" height: 350px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
+            <div style=" height: 100px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
             
         </div>
         <div class="Table">
         
-            <div style=" height: 400px;" class="InfoBox"></div>
-            <div style=" height: 200px;" class="InfoBox"></div>
+            <div style=" height: 400px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
+            <div style=" height: 200px;" class="InfoBox">
+                <div class="head">Hej med dig</div>
+            </div>
         
             
         </div>
