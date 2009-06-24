@@ -1,0 +1,22 @@
+﻿#BoardView
+{
+    border: solid 1px #666;
+    padding: 8px 0px 8px 8px;
+    overflow: hidden;
+}
+.InfoBox
+{
+    border: solid 1px #666;
+ 
+    width: 318px;
+    margin-bottom: 10px;
+}
+.Table
+{
+   
+    width: 320px;
+    float: left;
+    margin-right: 10px;
+
+     border: solid 0px #999;
+}

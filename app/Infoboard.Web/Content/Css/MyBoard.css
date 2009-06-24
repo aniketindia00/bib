@@ -1,10 +1,55 @@
-﻿#MyBoardContent
+﻿.MyBoardContent
 {
-
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-#MyBoardContent h2
+.MyBoardContent h2
 {
 
+    font-size: 16px;
+    padding-bottom: 6px;
+    border-bottom: solid 1px #666;
+    font-size: 16px;
+    font-weight: bold;
+    width: 770px;
+}
+
+
+.BoardItem
+{
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.BoardItem h3
+{
+    padding: 0;
+    margin: 5px 0 0px 0;
+    font-size: 13px;
+    font-weight: normal;   
+    color: #d0eb55;
+}
+
+.BoardItem p
+{   
+    margin-top: 0px;
+    color: #a5a5a5;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+
+/*AddBoard
+--------------------------------------------------------------*/
+#AddBoardContent
+{
+    
+}
+#AddBoardContent h2
+{
     font-size: 18px;
-
 }
+

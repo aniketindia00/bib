@@ -3,25 +3,38 @@
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     
-    <h2>Title</h2>
+    <div id="BoardView">
     
-    <h3>Sub-Title</h3>
-    
-    <p>Content</p>
+        <div class="Table">
+            <div style=" height: 400px;" class="InfoBox"></div>
+            <div style=" height: 100px;" class="InfoBox"></div>
+            <div style=" height: 150px;" class="InfoBox"></div>
+        </div>
+        <div class="Table">
         
-    <ol class="code">
-        <li class="t0">private void ClapYourHands() {</li>
-        <li class="t1"><code>if (youre_happy && you_know_it) {</code></li>
-        <li class="t2"><code>ClapYourHands();</code></li>
-        <li class="t1"><code>}</code></li>
-        <li class="t0">}</li>
-    </ol>
+            <div style=" height: 250px;" class="InfoBox"></div>
+            <div style=" height: 350px;" class="InfoBox"></div>
+            <div style=" height: 100px;" class="InfoBox"></div>
+            
+        </div>
+        <div class="Table">
+        
+            <div style=" height: 400px;" class="InfoBox"></div>
+            <div style=" height: 200px;" class="InfoBox"></div>
+        
+            
+        </div>
+                
+       
+     
+
     
-    <blockquote>
-        <p>Blockquote</p>
-    </blockquote>
-    
-    <div class="date">
-        <a href="#" title="#">Bottom</a>
     </div>
+    
+
+</asp:Content>
+<asp:Content ID="RightsideContentPlaceHolder" ContentPlaceHolderID="RightsideContentPlaceHolder" runat="server">
+
+    
+
 </asp:Content>
