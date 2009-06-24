@@ -2,14 +2,14 @@
 <%@ Import Namespace="Infoboard.Web.Infrastructure.Extensions"%>
 <%@ Import Namespace="Infoboard.Web.Controllers" %>
 
-<asp:Content ID="BoardContent" ContentPlaceHolderID="_mainContentPlaceHolder" runat="server">
+<asp:Content ID="BoardContent" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     
     <div id="MyBoardContent">
         <h2>Mine Opslagstavler</h2>
     </div>
 </asp:Content>
 
-<asp:Content ID="RightSideContent" ContentPlaceHolderID="_rightsideContentPlaceHolder" runat="server">
+<asp:Content ID="RightSideContent" ContentPlaceHolderID="RightsideContentPlaceHolder" runat="server">
     <h3>Muligheder:</h3>
     <ul>
           <li><a href="#">Opret Opslagstavle</a></li>
