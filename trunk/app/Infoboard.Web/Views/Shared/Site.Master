@@ -11,6 +11,7 @@
     
     <link href="<%= Html.CssPath("Site.css") %>" rel="stylesheet" type="text/css" />
     <link href="<%= Html.CssPath("MyBoard.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= Html.CssPath("ViewBoard.css") %>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -43,13 +44,18 @@
     
     <div class="content">
         <div id="main">
-      
-            <div class="right_side">
-                <div class="pad">
-                    <asp:ContentPlaceHolder ID="RightsideContentPlaceHolder" runat="server" />
+            <asp:ContentPlaceHolder ID="RightsideContentPlaceHolder" runat="server">
+                <div class="right_side">
+                    <div class="pad">  
+                            <h3>Muligheder:</h3>
+                            <ul>
+                                  <li><a href="/Home/AddBoard">Opret Opslagstavle</a></li>
+                                  <li><a href="#">Sorter Opslagstavle</a></li>
+                            </ul>            
+                    </div>
                 </div>
-            </div>
-           
+            </asp:ContentPlaceHolder>   
+            
             <div id="left_side">                
                 <div class="mpart">
                     <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server" />
@@ -61,7 +67,7 @@
         
         <div id="footer">
             <div class="right">&copy; Copyright 2009, Bang & Olufsen A/S</div>
-            <a href="#" title="RSS Feed">Made by</a> - <a href="http://www.vishao.dk">Morten Kristensen supported by the sidekick Daniel Toft.</a> 
+            <a href="#" title="RSS Feed">Made by</a> - <a href="http://www.toftit.com">Daniel Toft.</a> 
         </div>
        
     </div>

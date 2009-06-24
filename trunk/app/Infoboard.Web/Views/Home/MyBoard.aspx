@@ -4,16 +4,37 @@
 
 <asp:Content ID="BoardContent" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     
-    <div id="MyBoardContent">
-        <h2>Mine Opslagstavler</h2>
+    <div class="MyBoardContent">
+        <h2>Personlige Opslagstavler</h2>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
+    </div>
+    
+    <div class="MyBoardContent">
+        <h2>Templates</h2>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
+        <div class="BoardItem">     
+            <h3>Dette er overskriften</h3>
+            <p>Beskrivelse af opslagsetavlen</p>    
+        </div>
     </div>
 </asp:Content>
 
-<asp:Content ID="RightSideContent" ContentPlaceHolderID="RightsideContentPlaceHolder" runat="server">
-    <h3>Muligheder:</h3>
-    <ul>
-          <li><a href="#">Opret Opslagstavle</a></li>
-          <li><a href="#">Sorter Opslagstavle</a></li>
-    </ul>
-</asp:Content>
 

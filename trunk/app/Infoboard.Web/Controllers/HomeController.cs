@@ -20,5 +20,10 @@ namespace Infoboard.Web.Controllers
 
             return View();
         }
+        public ActionResult AddBoard()
+        {
+
+            return View();
+        }
     }
 }
