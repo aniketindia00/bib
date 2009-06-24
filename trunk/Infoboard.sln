@@ -11,10 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infoboard.Tests", "tests\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infoboard.Web", "app\Infoboard.Web\Infoboard.Web.csproj", "{024290C3-0D6C-467E-8817-959A883E09D5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Generation", "Code Generation", "{538DACCE-0C05-4858-B8E7-F5BE39CE6DED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudScaffolding", "tools\CrudScaffolding\CrudScaffolding.csproj", "{FEDDD037-9299-4430-809B-5B30A7F2D286}"
-EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -45,13 +41,8 @@ Global
 		{024290C3-0D6C-467E-8817-959A883E09D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{024290C3-0D6C-467E-8817-959A883E09D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{024290C3-0D6C-467E-8817-959A883E09D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FEDDD037-9299-4430-809B-5B30A7F2D286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FEDDD037-9299-4430-809B-5B30A7F2D286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{FEDDD037-9299-4430-809B-5B30A7F2D286} = {538DACCE-0C05-4858-B8E7-F5BE39CE6DED}
 	EndGlobalSection
 EndGlobal
