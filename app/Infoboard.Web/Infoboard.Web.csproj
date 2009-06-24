@@ -173,6 +173,7 @@
     <Content Include="Content\Images\commentb.jpg" />
     <Content Include="Content\Images\contact.gif" />
     <Content Include="Content\Images\home.gif" />
+    <Content Include="Content\Images\infoboxbg.png" />
     <Content Include="Content\Images\rmenuhead.gif" />
     <Content Include="Content\Images\rss.jpg" />
     <Content Include="Content\Images\sitemap.gif" />
