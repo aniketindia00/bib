@@ -6,7 +6,7 @@ using SharpArch.Core.DomainModel;
 
 namespace Infoboard.Core
 {
-    public class User : Entity
+    public sealed class User : Entity
     {
         public User() {
             InitializeMembers();
@@ -23,11 +23,11 @@ namespace Infoboard.Core
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
-        public virtual string Username { get; set; }
+        public string Username { get; set; }
 
-        public virtual IList<Chart> Rotation { get; protected set; }
-        public virtual IList<Chart> Charts { get; protected set; }
-        public virtual IList<Board> Boards { get; protected set; }
+        public IList<Chart> Rotation { get; protected set; }
+        public IList<Chart> Charts { get; protected set; }
+        public IList<Board> Boards { get; protected set; }
 
 
     }
