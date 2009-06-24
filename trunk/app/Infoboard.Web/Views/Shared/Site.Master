@@ -10,6 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     
     <link href="<%= Html.CssPath("Site.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%= Html.CssPath("MyBoard.css") %>" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -30,8 +31,8 @@
         <div class="content">
             <div id="menu">
                 <ul>
-                    <li><a href="/" class="current"><span>Vis Opslagstavle</span></a></li>
-                    <li><a href="/Home/MyBoard"><span>Min Opslagstavle</span></a></li>
+                    <li><a href="/" class="<%= ViewData["currentViewBoard"]%>""><span>Vis Opslagstavle</span></a></li>
+                    <li><a href="/Home/MyBoard" class="<%= ViewData["currentMyBoard"]%>"><span>Min Opslagstavle</span></a></li>
                    
                 </ul>
             </div>

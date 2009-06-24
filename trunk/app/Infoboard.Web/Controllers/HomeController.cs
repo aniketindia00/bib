@@ -7,11 +7,17 @@ namespace Infoboard.Web.Controllers
     {
         public ActionResult Index()
         {
+            ViewData["currentViewBoard"] = "current";
+            ViewData["currentMyBoard"] = "";
+
             return View();
         }
 
         public ActionResult MyBoard()
         {
+            ViewData["currentMyBoard"] = "current";
+            ViewData["currentViewBoard"] = "";
+
             return View();
         }
     }

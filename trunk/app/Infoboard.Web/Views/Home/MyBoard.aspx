@@ -3,7 +3,10 @@
 <%@ Import Namespace="Infoboard.Web.Controllers" %>
 
 <asp:Content ID="BoardContent" ContentPlaceHolderID="_mainContentPlaceHolder" runat="server">
-    My Board
+    
+    <div id="MyBoardContent">
+        <h2>Mine Opslagstavler</h2>
+    </div>
 </asp:Content>
 
 <asp:Content ID="RightSideContent" ContentPlaceHolderID="_rightsideContentPlaceHolder" runat="server">
