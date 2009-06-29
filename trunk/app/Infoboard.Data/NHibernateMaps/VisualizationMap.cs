@@ -6,10 +6,10 @@ using Infoboard.Core;
 
 namespace Infoboard.Data.NHibernateMaps
 {
-    public class BoardMap : IAutoMappingOverride<Board>
+    public class VisualizationMap : IAutoMappingOverride<Visualization>
     {
-        public void Override(AutoMap<Board> mapping) {
-            mapping.Id(x => x.Id)
+        public void Override(AutoMap<Visualization> mapping) {
+            mapping.Id(x => x.Id, "ChartId")
                 .WithUnsavedValue(0)
                 .GeneratedBy
                 .Identity();
@@ -17,16 +17,18 @@ namespace Infoboard.Data.NHibernateMaps
             mapping.Map(x => x.Title);
             mapping.Map(x => x.Description);
 
-            mapping.References(x => x.Creator, "UserID");
+            mapping.References(x => x.Creator);
+            mapping.References(x => x.Query);
 
-            mapping.HasManyToMany(x => x.Visualizations)
+            mapping.HasManyToMany(x => x.BoardsShownOn)
                 .Cascade.All()
+                .Inverse()
                 .WithTableName("BoardToVisualization");
 
             mapping.HasManyToMany(x => x.Subscribers)
                 .Cascade.All()
                 .Inverse()
-                .WithTableName("UserToBoard");
+                .WithTableName("UserToVisualization");
         }
     }
 }

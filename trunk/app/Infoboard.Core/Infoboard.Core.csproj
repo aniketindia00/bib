@@ -70,7 +70,9 @@
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Board.cs" />
-    <Compile Include="Chart.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="Type.cs" />
+    <Compile Include="Visualization.cs" />
     <Compile Include="Column.cs" />
     <Compile Include="DataInterfaces\IBoardRepository.cs" />
     <Compile Include="DataInterfaces\IChartRepository.cs" />

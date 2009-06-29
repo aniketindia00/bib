@@ -11,24 +11,24 @@ using SharpArch.Data.NHibernate;
 
 namespace Infoboard.Data
 {
-    public class ChartRepository : Repository<Chart>, IChartRepository
+    public class ChartRepository : Repository<Visualization>, IChartRepository
     {
-        public List<Chart> LoadByUser(string username)
+        public List<Visualization> LoadByUser(string username)
         {
-            ICriteria queryCriteria = Session.CreateCriteria(typeof (Chart))
+            ICriteria queryCriteria = Session.CreateCriteria(typeof (Visualization))
                 .Add(Restrictions.Eq("Creator", username))
                 .SetResultTransformer(new DistinctRootEntityResultTransformer());
 
-            return queryCriteria.List<Chart>() as List<Chart>;
+            return queryCriteria.List<Visualization>() as List<Visualization>;
         }
 
-        public List<Chart> LoadByBoard(Board board)
+        public List<Visualization> LoadByBoard(Board board)
         {
-            ICriteria queryCriteria = Session.CreateCriteria(typeof (Chart))
+            ICriteria queryCriteria = Session.CreateCriteria(typeof (Visualization))
                 .Add(Restrictions.Eq("Board", board))
                 .SetResultTransformer(new DistinctRootEntityResultTransformer());
 
-            return queryCriteria.List<Chart>() as List<Chart>;
+            return queryCriteria.List<Visualization>() as List<Visualization>;
         }
     }
 }

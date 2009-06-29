@@ -93,9 +93,12 @@
     <Compile Include="ChartRepository.cs" />
     <Compile Include="NHibernateMaps\AutoPersistenceModelGenerator.cs" />
     <Compile Include="NHibernateMaps\BoardMap.cs" />
-    <Compile Include="NHibernateMaps\ChartMap.cs" />
+    <Compile Include="NHibernateMaps\PropertyMap.cs" />
+    <Compile Include="NHibernateMaps\TypeMap.cs" />
+    <Compile Include="NHibernateMaps\VisualizationMap.cs" />
     <Compile Include="NHibernateMaps\ColumnMap.cs" />
     <Compile Include="NHibernateMaps\Conventions\HasManyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\HasManyToManyTableConvention.cs" />
     <Compile Include="NHibernateMaps\Conventions\PrimaryKeyConvention.cs" />
     <Compile Include="NHibernateMaps\Conventions\ReferenceConvention.cs" />
     <Compile Include="NHibernateMaps\Conventions\TableNameConvention.cs" />

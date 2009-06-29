@@ -19,7 +19,8 @@ namespace Infoboard.Core
         }
 
         private void InitializeMembers() {
-            Charts = new List<Chart>();
+            Visualizations = new List<Visualization>();
+            Subscribers = new List<User>();
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A title must be provided")]
@@ -28,9 +29,19 @@ namespace Infoboard.Core
         public virtual string Description { get; set; }
 
         [DomainSignature, NotNull(Message = "A user must be provided")]
-        public virtual User Creator { get; protected set; }
+        public virtual User Creator { get; private set; }
 
-        public virtual IList<Chart> Charts { get; protected set; }
-        
+        public virtual IList<Visualization> Visualizations { get; private set; }
+        public virtual IList<User> Subscribers { get; private set; }
+
+        public virtual void AddVisualization(Visualization visualization) {
+            visualization.BoardsShownOn.Add(this);
+            Visualizations.Add(visualization);
+        }
+
+        public virtual void AddSubscriber(User user) {
+            user.Boards.Add(this);
+            Subscribers.Add(user);
+        }
     }
 }

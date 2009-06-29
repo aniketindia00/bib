@@ -18,17 +18,13 @@ namespace Infoboard.Data.NHibernateMaps
             mapping.Map(x => x.Description);
             mapping.Map(x => x.Command);
 
-            mapping.HasMany(x => x.Charts)
+            mapping.HasMany(x => x.Visualizations)
                 .Inverse()
-                .KeyColumnNames.Add("QueryID")
-                .LazyLoad()
-                .AsBag();
+                .Cascade.All();
 
             mapping.HasMany(x => x.Columns)
                 .Inverse()
-                .KeyColumnNames.Add("QueryID")
-                .LazyLoad()
-                .AsBag();
+                .Cascade.All();
         }
     }
 }

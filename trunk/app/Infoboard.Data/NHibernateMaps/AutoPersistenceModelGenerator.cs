@@ -41,6 +41,7 @@ namespace Infoboard.Data.NHibernateMaps
                 c.Add<ReferenceConvention>();
                 c.Add<HasManyConvention>();
                 c.Add<TableNameConvention>();
+                c.Add<HasManyToManyTableConvention>();
             };
         }
 

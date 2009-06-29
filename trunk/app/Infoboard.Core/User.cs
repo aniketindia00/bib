@@ -17,18 +17,19 @@ namespace Infoboard.Core
         }
 
         private void InitializeMembers() {
-            Charts = new List<Chart>();
             Boards = new List<Board>();
-            Rotation = new List<Chart>();
+            //Rotation = new List<Visualization>();
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
         public virtual string Username { get; set; }
 
-        public virtual IList<Chart> Rotation { get; protected set; }
-        public virtual IList<Chart> Charts { get; protected set; }
-        public virtual IList<Board> Boards { get; protected set; }
+        //public virtual IList<Visualization> Rotation { get; protected set; }
+        public virtual IList<Board> Boards { get; private set; }
 
-
+        public virtual void AddSubscription(Board board) {
+            board.Subscribers.Add(this);
+            Boards.Add(board);
+        }
     }
 }
