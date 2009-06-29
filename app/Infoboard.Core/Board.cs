@@ -15,7 +15,6 @@ namespace Infoboard.Core
         public Board(string title, User user) : this()
         {
             Title = title;
-            Creator = user;
         }
 
         private void InitializeMembers() {
@@ -27,9 +26,6 @@ namespace Infoboard.Core
         public virtual string Title { get; set; }
 
         public virtual string Description { get; set; }
-
-        [DomainSignature, NotNull(Message = "A user must be provided")]
-        public virtual User Creator { get; private set; }
 
         public virtual IList<Visualization> Visualizations { get; private set; }
         public virtual IList<User> Subscribers { get; private set; }
