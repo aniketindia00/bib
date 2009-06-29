@@ -16,6 +16,7 @@ namespace Infoboard.Data.NHibernateMaps
 
             mapping.Map(x => x.Title);
             mapping.Map(x => x.Description);
+            mapping.Map(x => x.Connection);
             mapping.Map(x => x.Command);
 
             mapping.HasMany(x => x.Visualizations)

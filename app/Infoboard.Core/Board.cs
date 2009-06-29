@@ -12,7 +12,7 @@ namespace Infoboard.Core
             InitializeMembers();
         }
 
-        public Board(string title, User user) : this()
+        public Board(string title) : this()
         {
             Title = title;
         }

@@ -17,7 +17,7 @@ namespace Infoboard.Data.NHibernateMaps
             mapping.Map(x => x.Name);
             mapping.Map(x => x.Alias);
 
-            mapping.References(x => x.Query, "QueryID");
+            mapping.References(x => x.Query);
         }
     }
 }
