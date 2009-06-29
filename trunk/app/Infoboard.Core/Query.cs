@@ -12,10 +12,11 @@ namespace Infoboard.Core
             InitializeMembers();
         }
 
-        public Query(string title, string sqlCommand)
+        public Query(string title, string connection, string command)
         {
             Title = title;
-            Command = sqlCommand;
+            Connection = connection;
+            Command = command;
         }
 
         private void InitializeMembers() {
@@ -28,7 +29,10 @@ namespace Infoboard.Core
 
         public virtual string Description { get; set; }
 
-        [DomainSignature, NotNullNotEmpty(Message = "A command must be provided")]
+        [DomainSignature, NotNullNotEmpty(Message = "A connection must be provided")]
+        public virtual string Connection { get; set; }
+
+        [DomainSignature, NotNullNotEmpty(Message = "A query must be provided")]
         public virtual string Command { get; set; }
 
         public virtual IList<Visualization> Visualizations { get; protected set; }

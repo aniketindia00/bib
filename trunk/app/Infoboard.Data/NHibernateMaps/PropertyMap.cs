@@ -1,5 +1,4 @@
-﻿using System;
-using FluentNHibernate.AutoMap;
+﻿using FluentNHibernate.AutoMap;
 using FluentNHibernate.AutoMap.Alterations;
 using Infoboard.Core;
 
