@@ -6,9 +6,9 @@ using SharpArch.Core.PersistenceSupport;
 
 namespace Infoboard.Core.DataInterfaces
 {
-    public interface IChartRepository : IRepository<Chart>
+    public interface IChartRepository : IRepository<Visualization>
     {
-        List<Chart> LoadByUser(string username);
-        List<Chart> LoadByBoard(Board board);
+        List<Visualization> LoadByUser(string username);
+        List<Visualization> LoadByBoard(Board board);
     }
 }

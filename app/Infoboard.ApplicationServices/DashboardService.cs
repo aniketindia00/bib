@@ -6,7 +6,7 @@ namespace Infoboard.ApplicationServices
 {
     public interface IDashboardService
     {
-        List<Chart> GetChartsByBoardId(int boardId);
+        List<Visualization> GetChartsByBoardId(int boardId);
     }
 
     public class DashboardService : IDashboardService
@@ -19,8 +19,8 @@ namespace Infoboard.ApplicationServices
             _chartRepository = chartRepository;
         }
 
-        public List<Chart> GetChartsByBoardId(int boardId) {
-            return new List<Chart>();
+        public List<Visualization> GetChartsByBoardId(int boardId) {
+            return new List<Visualization>();
         }
     }
 }

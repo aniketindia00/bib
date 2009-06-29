@@ -6,13 +6,13 @@ using SharpArch.Core.DomainModel;
 
 namespace Infoboard.Core
 {
-    public class Chart : Entity
+    public class Visualization : Entity
     {
-        public Chart() {
+        public Visualization() {
             InitializeMembers();
         }
 
-        public Chart(Query query, User creator, string title) : this()
+        public Visualization(Query query, User creator, string title) : this()
         {
             Query = query;
             Creator = creator;
@@ -20,7 +20,7 @@ namespace Infoboard.Core
         }
 
         private void InitializeMembers() {
-            Charts = new List<Chart>();
+            BoardsShownOn = new List<Board>();
             Subscribers = new List<User>();
         }
 
@@ -29,15 +29,21 @@ namespace Infoboard.Core
 
         public virtual string Description { get; set; }
 
+        [DomainSignature, NotNull(Message = "A type must be provided")]
+        public virtual Type Type { get; set; }
+
         [DomainSignature, NotNull(Message = "A query must be provided")]
-        public virtual Query Query { get; protected set; }
+        public virtual Query Query { get; set; }
 
         [DomainSignature, NotNull(Message = "A user must be provided")]
         public virtual User Creator { get; protected set; }
 
-        public virtual IList<Chart> Charts { get; protected set; }
-        public virtual IList<User> Subscribers { get; protected set; }
+        public virtual IList<Board> BoardsShownOn { get; private set; }
+        public virtual IList<User> Subscribers { get; private set; }
 
-        
+        public virtual void AddToBoard(Board board) {
+            board.Visualizations.Add(this);
+            BoardsShownOn.Add(board);
+        }
     }
 }

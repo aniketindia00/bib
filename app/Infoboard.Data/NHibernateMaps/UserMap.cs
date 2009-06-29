@@ -16,24 +16,9 @@ namespace Infoboard.Data.NHibernateMaps
 
             mapping.Map(x => x.Username);
 
-            mapping.HasMany(x => x.Charts)
-                .Inverse()
-                .KeyColumnNames.Add("UserID")
-                .LazyLoad()
-                .AsBag();
-
-            mapping.HasMany(x => x.Boards)
-                .Inverse()
-                .KeyColumnNames.Add("UserID")
-                .LazyLoad()
-                .AsBag();
-
-            mapping.HasManyToMany<Board>(x => x.Rotation)
-                .WithTableName("Rotations").Inverse()
-                .WithParentKeyColumn("UserID")
-                .WithChildKeyColumn("ChartID")
-                .LazyLoad()
-                .AsBag();
+            mapping.HasManyToMany(x => x.Boards)
+                .Cascade.All()
+                .WithTableName("UserToBoard");
         }
     }
 }

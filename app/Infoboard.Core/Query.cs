@@ -19,7 +19,7 @@ namespace Infoboard.Core
         }
 
         private void InitializeMembers() {
-            Charts = new List<Chart>();
+            Visualizations = new List<Visualization>();
             Columns = new List<Column>();
         }
 
@@ -31,7 +31,7 @@ namespace Infoboard.Core
         [DomainSignature, NotNullNotEmpty(Message = "A command must be provided")]
         public virtual string Command { get; set; }
 
-        public virtual IList<Chart> Charts { get; protected set; }
+        public virtual IList<Visualization> Visualizations { get; protected set; }
         public virtual IList<Column> Columns { get; protected set; }
     }
 }
