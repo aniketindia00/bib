@@ -17,8 +17,6 @@ namespace Infoboard.Data.NHibernateMaps
             mapping.Map(x => x.Title);
             mapping.Map(x => x.Description);
 
-            mapping.References(x => x.Creator, "UserID");
-
             mapping.HasManyToMany(x => x.Visualizations)
                 .Cascade.All()
                 .WithTableName("BoardToVisualization");
