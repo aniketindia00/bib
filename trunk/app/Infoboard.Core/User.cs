@@ -13,7 +13,7 @@ namespace Infoboard.Core
         }
 
         public User(string username) : this() {
-            Username = username;
+            Initials = username;
         }
 
         private void InitializeMembers() {
@@ -22,7 +22,7 @@ namespace Infoboard.Core
         }
 
         [DomainSignature, NotNullNotEmpty(Message = "A username must be provided")]
-        public virtual string Username { get; set; }
+        public virtual string Initials { get; set; }
 
         //public virtual IList<Visualization> Rotation { get; protected set; }
         public virtual IList<Board> Boards { get; private set; }

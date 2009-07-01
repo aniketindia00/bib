@@ -10,14 +10,11 @@ namespace Infoboard.Data.NHibernateMaps
     {
         public void Override(AutoMap<User> mapping) {
             mapping.Id(x => x.Id)
-                .WithUnsavedValue(0)
-                .GeneratedBy
-                .Identity();
+                .GeneratedBy.Identity();
 
-            mapping.Map(x => x.Username);
+            mapping.Map(x => x.Initials);
 
             mapping.HasManyToMany(x => x.Boards)
-                .Cascade.All()
                 .WithTableName("UserToBoard");
         }
     }

@@ -8,7 +8,6 @@ namespace Infoboard.Data.NHibernateMaps
     {
         public void Override(AutoMap<Property> mapping) {
             mapping.Id(x => x.Id)
-                .WithUnsavedValue(0)
                 .GeneratedBy.Identity();
 
             mapping.Map(x => x.Name);

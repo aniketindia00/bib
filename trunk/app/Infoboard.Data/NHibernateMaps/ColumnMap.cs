@@ -10,9 +10,7 @@ namespace Infoboard.Data.NHibernateMaps
     {
         public void Override(AutoMap<Column> mapping) {
             mapping.Id(x => x.Id)
-                .WithUnsavedValue(0)
-                .GeneratedBy
-                .Identity();
+                .GeneratedBy.Identity();
 
             mapping.Map(x => x.Name);
             mapping.Map(x => x.Alias);

@@ -142,6 +142,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infoboard.ApplicationServices\DashboardService.cs" />
     <Compile Include="Infoboard.Web\Controllers\RouteRegistrarTests.cs" />
     <Compile Include="Infoboard.Data\NHibernateMaps\MappingIntegrationTests.cs" />
     <Compile Include="Infoboard.Data\TestDoubles\EntityDuplicateCheckerStub.cs" />

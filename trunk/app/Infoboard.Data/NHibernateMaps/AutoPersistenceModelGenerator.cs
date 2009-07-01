@@ -7,6 +7,7 @@ using SharpArch.Core.DomainModel;
 using SharpArch.Data.NHibernate.FluentNHibernate;
 using Infoboard.Core;
 using Infoboard.Data.NHibernateMaps.Conventions;
+using Type = System.Type;
 
 namespace Infoboard.Data.NHibernateMaps
 {
@@ -41,7 +42,7 @@ namespace Infoboard.Data.NHibernateMaps
                 c.Add<ReferenceConvention>();
                 c.Add<HasManyConvention>();
                 c.Add<TableNameConvention>();
-                c.Add<HasManyToManyTableConvention>();
+                c.Add<HasManyToManyConvention>();
             };
         }
 
