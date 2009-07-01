@@ -12,10 +12,9 @@ namespace Infoboard.Core
             InitializeMembers();
         }
 
-        public Visualization(Query query, User creator, string title) : this()
+        public Visualization(Query query, string title) : this()
         {
             Query = query;
-            Creator = creator;
             Title = title;
         }
 
@@ -34,9 +33,6 @@ namespace Infoboard.Core
 
         [DomainSignature, NotNull(Message = "A query must be provided")]
         public virtual Query Query { get; set; }
-
-        [DomainSignature, NotNull(Message = "A user must be provided")]
-        public virtual User Creator { get; protected set; }
 
         public virtual IList<Board> BoardsShownOn { get; private set; }
         public virtual IList<User> Subscribers { get; private set; }

@@ -7,14 +7,16 @@ using FluentNHibernate.Mapping;
 
 namespace Infoboard.Data.NHibernateMaps.Conventions
 {
-    public class HasManyToManyTableConvention : IHasManyToManyConvention
+    public class HasManyToManyConvention : IHasManyToManyConvention
     {
         public bool Accept(IManyToManyPart target) {
             return true;
         }
 
         public void Apply(IManyToManyPart target) {
-            target.WithTableName(target.ChildType.Name);
+            target.WithParentKeyColumn(target.EntityType.Name + "Fk");
+            target.WithChildKeyColumn(target.ChildType.Name + "Fk");
+            target.Cascade.All();
         }
     }
 }
