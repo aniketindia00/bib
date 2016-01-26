@@ -1,0 +1,1 @@
+Dynamically create statistics and data overview given any database table.
